@@ -1,6 +1,6 @@
 import { Nav, Button, Navbar, Image } from "react-bootstrap";
 import { HashRouter, Routes, Route, NavLink} from "react-router";
-import Homepage from "./pages/Homepage";
+import Homepage from "./../pages/Homepage";
 import LoginPage from "./pages/LoginPage";
 import Registration from "./pages/registration";
 import Course from "./pages/course";
@@ -24,7 +24,7 @@ export default function Navigationbar(props){
                             <NavLink className="link" to="/course">Course</NavLink>
                         </Button>
                 
-                        <Image src={CrazyLegsLogo}height="80rem" width="170rem" alt="Crazy Legs Classic Logo"/>
+                        <Image src={CrazyLegsLogo} height="70rem" width="150rem" alt="Crazy Legs Classic Logo"/>
                     </Nav>
                     <Routes>
                         <Route path="/" element={<Homepage className="page"/>}/>

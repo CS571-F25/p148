@@ -5,7 +5,6 @@ function App() {
   return (
     <>
       <Navbar fixed="top">
-
       </Navbar>
     </>   
   )

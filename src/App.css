@@ -71,6 +71,11 @@ body {
 }
 
 .link:hover {
-  color:rgb(161, 2, 13);
+  color:rgb(171, 2, 13);
   text-decoration: none;
+}
+
+.homepageText {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  font-size: 1.25rem;
 }

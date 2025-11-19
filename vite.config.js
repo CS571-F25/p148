@@ -4,6 +4,6 @@ export default defineConfig({
 plugins: [react()],
 base: '/p148/',
 build: {
-outDir: 'docs'
+outDir: 'src'
 }
 })
