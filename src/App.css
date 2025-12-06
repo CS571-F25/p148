@@ -89,3 +89,8 @@ html, body, #root {
   width: 100%;
 }
 
+.textInput {
+  width: "300px";
+  margin: "0 auto";
+  display: "block";
+}

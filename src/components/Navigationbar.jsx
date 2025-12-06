@@ -8,7 +8,12 @@ import Course from "./pages/Course";
 import CrazyLegsLogo from "./../assets/crazyLegsLogo.png";
 
 export default function Navigationbar(props){
-    return  <Navbar>
+    return  <div style={{width:window.innerWidth, 
+                                                display:'flex', 
+                                                justifyContent:'center', 
+                                                alignContent:'center', 
+                                                flexDirection:'column'}}>
+                <Navbar>   
                 <HashRouter>
                     <Nav id="navBar" >
                         <Button className="navButton">
@@ -34,4 +39,5 @@ export default function Navigationbar(props){
                     </Routes>
                 </HashRouter> 
             </Navbar>
+        </div>
 }
