@@ -66,3 +66,24 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.sponsor-scroll-container {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.sponsor-scroll-track {
+  display: inline-flex;
+  animation: scroll 2s linear infinite;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,27 +1,10 @@
-import { Container, Row, Col, Carousel, Image} from "react-bootstrap"
-
-import CImag1 from "./../../assets/carousel1.jpg"
-import CImag2 from "./../../assets/carousel2.jpg"
-import CImag3 from "./../../assets/carousel3.jpg"
-import CImag4 from "./../../assets/carousel4.jpg"
+import { Container, Row, Col } from "react-bootstrap"
+import ImageCarousel from "../ImageCarousel"
 import SponsorScrollBar from "../SponsorScrollBar"
 
 export default function Homepage(props){
-    return  <div id="homepageDiv">             
-                <Carousel className="carousel" indicators={false} fluid={true}>
-                    <Carousel.Item>
-                        <Image src={CImag1} height="100%" width="100%"/>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <Image src={CImag2} height="100%" width="100%"/>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <Image src={CImag3} height="100%" width="100%"/>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <Image src={CImag4} height="100%" width="100%"/>
-                    </Carousel.Item>
-                </Carousel> 
+    return  <div>             
+                <ImageCarousel/>
 
                 <br/>
 
