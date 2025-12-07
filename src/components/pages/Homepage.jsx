@@ -3,11 +3,17 @@ import ImageCarousel from "../ImageCarousel"
 import SponsorScrollBar from "../SponsorScrollBar"
 
 export default function Homepage(props){
-    return  <div>             
+    return  <div style={{width:window.innerWidth, 
+                        display:'flex', 
+                        justifyContent:'center', 
+                        alignContent:'center', 
+                        flexDirection:'column',
+                        placeContent:'left'}}>             
                 <ImageCarousel/>
 
                 <br/>
 
+                <h1 className="pageTitle">Crazylegs Classic</h1>
                 <Container>
                     <Row>
                         <Col>

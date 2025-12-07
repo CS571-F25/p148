@@ -5,7 +5,7 @@ import CImag3 from "./../assets/carousel3.jpg"
 import CImag4 from "./../assets/carousel4.jpg"
 
 export default function ImageCarousel(props){
-    return <Carousel className="carousel" indicators={false} fluid={true} width="100%" left={0}>
+    return <Carousel className="carousel" indicators={false} fluid={true} width="100%" >
                 <Carousel.Item>
                     <Image src={CImag1} height="100%" width="100%"/>
                 </Carousel.Item>

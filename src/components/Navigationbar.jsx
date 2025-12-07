@@ -9,10 +9,10 @@ import CrazyLegsLogo from "./../assets/crazyLegsLogo.png";
 
 export default function Navigationbar(props){
     return  <div style={{width:window.innerWidth, 
-                                                display:'flex', 
-                                                justifyContent:'center', 
-                                                alignContent:'center', 
-                                                flexDirection:'column'}}>
+                        display:'flex', 
+                        justifyContent:'center', 
+                        alignContent:'center', 
+                        flexDirection:'column'}}>
                 <Navbar>   
                 <HashRouter>
                     <Nav id="navBar" >

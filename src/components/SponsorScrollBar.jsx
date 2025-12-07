@@ -10,7 +10,10 @@ export default function SponsorScrollBar(props){
 
     return  <>
                 <div className="sponsor-scroll-container">
-                    <div className="sponsor-scroll-track">
+                    <div className="sponsor-scroll-group">
+                        {arrayOfSponsorImages.map(image => (<Sponsor image={image}/>))}
+                    </div>
+                    <div aria-hidden className="sponsor-scroll-group">
                         {arrayOfSponsorImages.map(image => (<Sponsor image={image}/>))}
                     </div>
                 </div>

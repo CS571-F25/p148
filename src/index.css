@@ -68,22 +68,27 @@ button:focus-visible {
 }
 
 .sponsor-scroll-container {
-  overflow: hidden;
-  width: 100%;
-  white-space: nowrap;
+  margin: 100px auto;
+  width: "window.innerWidth";
+  display: flex;
+  overflow-x: auto;
 }
 
-.sponsor-scroll-track {
-  display: inline-flex;
-  animation: scroll 2s linear infinite;
+.sponsor-scroll-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: scroll 10s linear infinite;
 }
 
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  from {translate: 0}
+  to {translate: -100%}
+}
+
+.pageTitle {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
