@@ -61,7 +61,7 @@ body {
 .btn {
   background-color: transparent !important;
   border-color: transparent !important;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  font-family: badgerFont !important;
   font-size: 2rem !important;
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 .homepageText {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  font-family: badgerFont !important;
   font-size: 1.25rem;
 }
 
@@ -93,4 +93,18 @@ html, body, #root {
   width: "300px";
   margin: "0 auto";
   display: "block";
+}
+
+@font-face {
+  font-family: badgerFontHeader;
+  src: url(./assets/RedHatDisplay-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: badgerFont;
+  src: url(./assets/RedHatDisplay-Regular.ttf);
+}
+
+h1, #formLabel {
+  font-family: badgerFontHeader;
 }

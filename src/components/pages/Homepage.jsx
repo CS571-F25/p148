@@ -1,6 +1,7 @@
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Image } from "react-bootstrap"
 import ImageCarousel from "../ImageCarousel"
 import SponsorScrollBar from "../SponsorScrollBar"
+import WiscLogo from '../../assets/WiscLogo.png'
 
 export default function Homepage(props){
     return  <div style={{width:window.innerWidth, 
@@ -12,8 +13,13 @@ export default function Homepage(props){
                 <ImageCarousel/>
 
                 <br/>
-
-                <h1 className="pageTitle">Crazylegs Classic</h1>
+                <div style={{display:'flex', 
+                            flexDirection:'row', 
+                            justifyContent:'center', 
+                            alignContent:'center'}}>
+                    <h1 className="pageTitle">Crazylegs Classic</h1>
+                    <Image src={WiscLogo} style={{}}/>
+                </div>
                 <Container>
                     <Row>
                         <Col>
