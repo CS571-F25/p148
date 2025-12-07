@@ -137,3 +137,8 @@ h1, #formLabel {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.nonNavButton {
+  background-color:rgb(171, 2, 13) !important;
+  width: 10rem;
+}
