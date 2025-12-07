@@ -80,10 +80,6 @@ body {
   font-size: 1.25rem;
 }
 
-#homepageDiv {
-  flex-direction: column;
-}
-
 html, body, #root {
   width: 100%;
   overflow-x: hidden;
@@ -107,4 +103,37 @@ html, body, #root {
 
 h1, #formLabel {
   font-family: badgerFontHeader;
+}
+
+.contentBreakLine{
+  width: 40%;
+  flex: auto;
+  color: rgb(0, 0, 0) !important;
+  border-width: 5px;
+}
+
+.sponsor-scroll-container {
+  margin: 30px auto;
+  width: "window.innerWidth";
+  display: flex;
+  overflow-x: auto;
+}
+
+.sponsor-scroll-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: scroll 20s linear infinite;
+}
+
+
+@keyframes scroll {
+  from {translate: 0}
+  to {translate: -100%}
+}
+
+.pageTitle {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

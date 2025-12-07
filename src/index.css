@@ -66,29 +66,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-.sponsor-scroll-container {
-  margin: 100px auto;
-  width: "window.innerWidth";
-  display: flex;
-  overflow-x: auto;
-}
-
-.sponsor-scroll-group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: scroll 10s linear infinite;
-}
-
-
-@keyframes scroll {
-  from {translate: 0}
-  to {translate: -100%}
-}
-
-.pageTitle {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}

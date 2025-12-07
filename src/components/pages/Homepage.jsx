@@ -1,6 +1,7 @@
 import { Container, Row, Col, Image } from "react-bootstrap"
 import ImageCarousel from "../ImageCarousel"
 import SponsorScrollBar from "../SponsorScrollBar"
+import ContentBreak from "../ContentBreak"
 import WiscLogo from '../../assets/WiscLogo.png'
 
 export default function Homepage(props){
@@ -18,8 +19,11 @@ export default function Homepage(props){
                             justifyContent:'center', 
                             alignContent:'center'}}>
                     <h1 className="pageTitle">Crazylegs Classic</h1>
-                    <Image src={WiscLogo} style={{}}/>
+                    <Image src={WiscLogo} style={{height:"70px", paddingLeft:"20px", paddingTop:"20px"}}/>
                 </div>
+
+                <ContentBreak text="About Us"/>
+
                 <Container>
                     <Row>
                         <Col>
@@ -45,6 +49,8 @@ export default function Homepage(props){
                         </Col>
                     </Row>
                 </Container>
+
+                <ContentBreak text="Sponsors"/>
 
                 <SponsorScrollBar/>
             </div>
