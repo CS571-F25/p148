@@ -4,7 +4,7 @@ import LogInStatus from './context/LogInStatusContext'
 import { useState } from 'react'
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(localStorage.getItem("userInfo"));
 
   return (
     <LogInStatus.Provider value={[loggedIn, setLoggedIn]}>

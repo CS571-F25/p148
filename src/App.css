@@ -142,3 +142,11 @@ h1, #formLabel {
   background-color:rgb(171, 2, 13) !important;
   width: 10rem;
 }
+
+#usernameInput, #passwordInput, #repeatPasswordInput{
+  width: 30rem;
+}
+
+#usernameLabel, #passwordLabel, #repeatPasswordLabel{
+  font-family: badgerFont;
+}

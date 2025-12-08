@@ -1,3 +1,26 @@
+import { useContext } from "react"
+import { Button } from "react-bootstrap"
+import { useNavigate } from "react-router"
+import LogInStatus from "../../context/LogInStatusContext"
+
 export default function MyInfo(props){
-    return <p>My Info</p>
+    const navigate = useNavigate()
+    const [loggedIn, setLoggedIn] = useContext(LogInStatus)
+
+    function signout(){
+        localStorage.removeItem("userInfo")
+        setLoggedIn(false)
+        navigate("/")
+    }
+
+    return  <div style={{width:'100%', 
+                        display:'flex', 
+                        justifyContent:'center', 
+                        alignContent:'center', 
+                        alignItems:'center',
+                        flexDirection:'column'}}>
+
+                <h1 className="pageTitle">Info</h1>
+                <Button className="nonNavButton" style={{marginTop:"1em"}} onClick={signout}>Sign Out</Button> 
+            </div>
 }
