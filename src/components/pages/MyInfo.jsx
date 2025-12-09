@@ -2,6 +2,7 @@ import { useContext } from "react"
 import { Button, Card } from "react-bootstrap"
 import { useNavigate } from "react-router"
 import LogInStatus from "../../context/LogInStatusContext"
+import InfoCard from "../InfoCard"
 
 export default function MyInfo(props){
     const navigate = useNavigate()
@@ -21,7 +22,7 @@ export default function MyInfo(props){
                         flexDirection:'column'}}>
 
                 <h1 className="pageTitle">Info</h1>
-                <Card></Card>
+                <InfoCard/>
                 <Button className="nonNavButton" style={{marginTop:"1em"}} onClick={signout}>Sign Out</Button> 
             </div>
 }

@@ -19,7 +19,7 @@ export default function Homepage(props){
                             justifyContent:'center', 
                             alignContent:'center'}}>
                     <h1 className="pageTitle">Crazylegs Classic</h1>
-                    <Image src={WiscLogo} style={{height:"70px", paddingLeft:"20px", paddingTop:"20px"}}/>
+                    <Image src={WiscLogo} style={{height:"70px", paddingLeft:"20px", paddingTop:"20px"}} alt="UW-Madison Logo"/>
                 </div>
 
                 <ContentBreak text="About Us"/>

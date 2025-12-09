@@ -143,10 +143,20 @@ h1, #formLabel {
   width: 10rem;
 }
 
-#usernameInput, #passwordInput, #repeatPasswordInput{
+#usernameInput, #passwordInput, #repeatPasswordInput {
   width: 30rem;
 }
 
-#usernameLabel, #passwordLabel, #repeatPasswordLabel{
+#usernameLabel, #passwordLabel, #repeatPasswordLabel {
   font-family: badgerFont;
 }
+
+ #cardHeader {
+  font-family: badgerFontHeader;
+  font-size: 2em;
+}
+
+#cardText{
+  font-family: badgerFont;
+  font-size: 1.6em;
+ }

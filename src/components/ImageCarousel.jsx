@@ -7,16 +7,16 @@ import CImag4 from "./../assets/carousel4.jpg"
 export default function ImageCarousel(props){
     return <Carousel className="carousel" indicators={false} fluid={true} width="100%" >
                 <Carousel.Item>
-                    <Image src={CImag1} height="100%" width="100%" alt=""/>
+                    <Image src={CImag1} height="100%" width="100%" alt="An Image of Bucky Badger Greeting Runners"/>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Image src={CImag2} height="100%" width="100%"/>
+                    <Image src={CImag2} height="100%" width="100%" alt="An Image of the Finish Line"/>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Image src={CImag3} height="100%" width="100%"/>
+                    <Image src={CImag3} height="100%" width="100%" alt="An Image of the Starting Line"/>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <Image src={CImag4} height="100%" width="100%"/>
+                    <Image src={CImag4} height="100%" width="100%" alt="An Image of Runners Finishing the Race"/>
                 </Carousel.Item>
             </Carousel> 
 }
