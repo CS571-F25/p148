@@ -17,17 +17,41 @@ export default function Registration(props){
             if(passwordRef.current.value !== repeatPasswordRef.current.value){
                 alert("Make sure your passwords are matching.");
             } else {
-                storeInfo()
+                register()
             }
         }
     }
 
-    function storeInfo(){
-        localStorage.setItem("userInfo",JSON.stringify({
+    function register(){
+        //Inits or adds to users "database"
+        const bibNumber = Math.floor(Math.random() * 1000);
+        if(localStorage.getItem("users") === null){
+            localStorage.setItem("users", JSON.stringify([{ "username":usernameRef.current.value,
+                                                            "password":passwordRef.current.value,
+                                                            "bibNumber":bibNumber      
+                                }]))
+        } else {
+            let arrOfUsers = JSON.parse(localStorage.getItem("users"))
+            arrOfUsers.push({   "username":usernameRef.current.value,
+                                "password":passwordRef.current.value,
+                                "bibNumber":bibNumber      
+                            })
+            localStorage.setItem("users", JSON.stringify(arrOfUsers))
+        }
+
+
+        //Sets userInfo
+        let arrOfUsers = JSON.parse(localStorage.getItem("users"))
+        for(let i = 0; i < arrOfUsers.length; i++){
+            if(usernameRef.current.value === arrOfUsers[i].username){
+                localStorage.setItem("userInfo",JSON.stringify({
                                             "username": usernameRef.current.value,
                                             "password": passwordRef.current.value,
-                                            "repeatPassword": repeatPasswordRef.current.value 
-        }))
+                                            "bibNumber": bibNumber
+                                    }))
+            }
+        }
+
         alert("You've been registered.")
         setLoggedIn(true)
         navigate("/myinfo")

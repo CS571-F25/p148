@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { Button } from "react-bootstrap"
+import { Button, Card } from "react-bootstrap"
 import { useNavigate } from "react-router"
 import LogInStatus from "../../context/LogInStatusContext"
 
@@ -21,6 +21,7 @@ export default function MyInfo(props){
                         flexDirection:'column'}}>
 
                 <h1 className="pageTitle">Info</h1>
+                <Card></Card>
                 <Button className="nonNavButton" style={{marginTop:"1em"}} onClick={signout}>Sign Out</Button> 
             </div>
 }
